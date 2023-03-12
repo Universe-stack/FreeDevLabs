@@ -1,0 +1,145 @@
+.Listpage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0;
+    
+
+
+    .Listpage__inner{
+        
+        padding: 4%;
+        color: #1E266D;
+        width: 80%;
+
+        h2{
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 100px;
+            font-size: 30px;
+            
+        }
+
+        .Listpage__inner_Section{
+            height: 70vh;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 40px;
+            
+        
+            .Listpage__inner__left{
+                height: 100%;
+                background: #FFFFFF;
+                width: 50%;
+                position: relative;
+
+                .blue{
+                    width: 15.68rem;
+                    height: 16rem;
+                    background: #999FE3;
+                    position: relative;
+                    z-index: 1;
+                    left: 40%;
+                    top: 8%;
+
+                    img{
+                        position: absolute;
+                        width: 19.5rem;
+                        height: 29.30rem;
+                        top: -83%;
+                        
+                    }
+                }
+
+                .yellow{
+                    width: 11.6rem;
+                    height: 13.25rem;
+                    background: #FED892;
+                    position: relative;
+                    z-index: 2;
+                    left: 15%;
+                    top: -10%;
+
+                    img{
+                        position: absolute;
+                        width: 22.7rem;
+                        height: 13.30rem;
+                        top: -0.4%;
+                        left: -11%;
+                    }
+                }
+
+                .red{
+                    width: 9.5rem;
+                    height: 9.5rem;
+                    background: #F47B9E;
+                    position: relative;
+                    z-index: 3;
+                    right: -48%;
+                    top: -25%;
+
+                    img{
+                        position: absolute;
+                        width: 8.0rem;
+                        height: 11.30rem;
+                        top: -19%;
+                        left: 15%;
+                    }
+                }
+            }
+
+            .Listpage__inner__right{
+                height: 100%;
+                width: 50%;
+                background: #FFFFFF;
+                display: flex;
+                flex-direction: column;
+                gap: 2%;
+                justify-content: center;
+                align-items: center;
+                
+                span{
+                    margin-top: 1.3em;
+                }
+
+                div{
+                    display: flex;
+                    width: 70%;
+                    justify-content: center;
+                    gap: 10%;
+                
+                    .content{
+                        display: flex;
+                        flex-direction: column;
+                        width: 405px;
+                        height: 193px;
+                        
+                        h3{
+                            margin: 0;
+                        }
+
+                        &::after{
+                            content: '';
+                            margin-top: 10px;
+                            height: 0.65px;
+                            width: 100%;
+                            border: 1px solid rgba(69, 88, 128, 0.2);
+                            background: #455880;
+                            opacity: 0.13;
+                        }
+                    }
+
+                  
+                }
+            }
+
+
+        }
+
+    }
+}

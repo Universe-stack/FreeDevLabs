@@ -1,0 +1,33 @@
+.Patners{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 2% 0;
+    margin: 0;
+
+
+    .Patners__inner{
+        text-align: center;
+        padding: 10px;
+        color: #1E266D;
+        span{
+
+            ul{
+                display: flex;
+                list-style: none;
+                gap: 2%;
+                text-align: center;
+                padding: 0;
+
+                h3{
+                    padding: 0;
+                    margin: 0;
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.navigations{
+
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: flex-start;
+        gap: 10px;
+        font-family: 'Halyard Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+        
+        li{
+        padding: 0;
+        margin: 0;
+        }
+
+        a{
+            font-size: 16px;
+            text-decoration: none;
+            color:#1E266D;
+            font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        }
+    }
+}
