@@ -9,7 +9,7 @@ const Navigations=(props)=>(
         <ul>
             <li><h3 className="Navigation__a"><NavLink to={props.Link} className={({isActive})=>isActive?"Navigation__active":"Navigation__normal"}>Home</NavLink></h3></li>
             <li><h3 className="Navigation__a"><NavLink to={props.Link} className={({isActive})=>isActive?"Navigation__active":"Navigation__normal"}>Community</NavLink></h3></li>
-            <li><h3 className="Navigation__a"><NavLink to={props.Link} className={({isActive})=>isActive?"Navigation__active":"Navigation__normal"}>How Tos</NavLink></h3></li>
+            <li><h3 className="Navigation__a"><NavLink to={props.Link} className={({isActive})=>isActive?"Navigation__active":"Navigation__normal"}>Resources</NavLink></h3></li>
             <li><h3 className="Navigation__a"><NavLink to={props.Link} className={({isActive})=>isActive?"Navigation__active":"Navigation__normal"}>Blog</NavLink></h3></li>
         </ul>
         

@@ -25,11 +25,11 @@
         }
 
         .Listpage__inner_Section{
-            height: 70vh;
             display: flex;
             flex-direction: row;
             width: 100%;
             margin-top: 40px;
+            
             
         
             .Listpage__inner__left{
@@ -143,3 +143,214 @@
 
     }
 }
+
+@media (min-width: 0px) {
+    .Listpage{
+        .Listpage__inner{
+
+            h2{
+                margin-bottom: 60px;
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
+            .Listpage__inner_Section{
+                flex-direction: column;
+                margin-top: 20px;
+                gap: 5rem;
+
+                .Listpage__inner__left{
+                    width: 100%;
+                    position: relative;
+                    height: 30rem;
+                    .yellow{
+                        left: -2%;
+                        top: -10%;
+                    }
+
+                    .red{
+                        left: 47%;
+                        top: -24%;
+                    }
+
+                    .blue{ 
+                        left: 20%;
+                        top: 10%;
+                        width: 85%;
+                        height: 16rem;
+
+                        
+                    img{
+                        width: 120%;
+                        height: 29.30rem;
+                        top: -83%;
+                        
+                    }
+                    }
+    
+                }
+
+                .Listpage__inner__right{
+                    width: 100%;
+                    padding: 10px 0;
+                    gap: 10px;
+                    
+                    div{
+                        margin-bottom: 10%;
+                    }
+                }     
+            }
+        }
+    }
+ }
+
+@media (min-width: 511px) {
+
+    .Listpage{
+        .Listpage__inner{
+            .Listpage__inner_Section{
+                .Listpage__inner__left{
+                    .red{
+                        left: 35%;
+                        top: -26%;
+                    }
+                    .blue{ 
+                        left: 20%;
+                        top: 10%;
+                        width: 15.68rem;
+                        height: 16rem;
+
+                        
+                    img{
+
+                        width: 19.5rem;
+                        height: 29.30rem;
+                        top: -83%;
+                        
+                    }
+                }
+                }    
+            }
+        }
+    }
+}
+
+@media (min-width: 658px) {
+
+    .Listpage{
+        .Listpage__inner{
+            .Listpage__inner_Section{
+                .Listpage__inner__left{
+                    .red{
+                        left: 35%;
+                        top: -26%;
+                    }
+
+                    .yellow{
+                        left: 5%;
+                        top: -10%;
+                    }
+                }    
+            }
+        }
+    }
+}
+
+@media (min-width: 746px) {
+
+    .Listpage{
+        .Listpage__inner{
+            .Listpage__inner_Section{
+                .Listpage__inner__left{
+                    .red{
+                        left: 30%;
+                        top: -26%;
+                    }
+
+                    .yellow{
+                        left: 5%;
+                        top: -10%;
+                    }
+
+                    .blue{ 
+                        left: 25%;
+                        top: 10%;
+                    }
+                }    
+            }
+        }
+    }
+}
+
+@media (min-width: 850px) {
+
+    .Listpage{
+        .Listpage__inner{
+            .Listpage__inner_Section{
+                .Listpage__inner__left{
+                    .red{
+                        left: 39%;
+                        top: -26%;
+                    }
+
+                    .yellow{
+                        left: 17%;
+                        top: -10%;
+                    }
+
+                    .blue{ 
+                        left: 30%;
+                        top: 10%;
+                    }
+                }    
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+
+    .Listpage{
+        .Listpage__inner{
+
+            h2{
+                margin-bottom: 60px;
+            }
+            .Listpage__inner_Section{
+                flex-direction: row;
+                margin-top: 20px;
+                gap: 0rem;
+
+                .Listpage__inner__left{
+                    width: 50%;
+                    position: relative;
+                    height: 30rem;
+                    
+                    .blue{
+                        left: 40%;
+                        top: 8%;
+                    }
+    
+                    .yellow{
+                        left: 15%;
+                        top: -10%;
+    
+                    }
+    
+                    .red{
+                        right: -48%;
+                        top: -25%;
+                    }
+    
+                }
+
+                .Listpage__inner__right{
+                    width: 50%;
+                    padding: 10px 0;
+                    
+                    div{
+                        margin-bottom: 10px;
+                    }
+                }     
+            }
+        }
+    }
+ }

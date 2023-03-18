@@ -13,3 +13,4 @@ export {default as Listpage} from './ListPage/Listpage';
 export {default as Courses} from './Courses/Courses';
 export {default as Showcase} from './Showcase/Showcase';
 export {default as Faq} from './Faq/Faq';
+export {default as Banner} from './Banner/Banner';

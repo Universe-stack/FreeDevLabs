@@ -5,6 +5,8 @@ import Navigations from "../Navigations/Navigations";
 //import DrawToggle from "../UI/DrawToggle/DrawToggle";
 import { NavLink } from "react-router-dom";
 
+import {TiThMenu} from 'react-icons/ti';
+
 
 
 
@@ -13,11 +15,11 @@ export default function Navbar(props){
         <div className="navbar">
             <div className="navbar__left">
                 <div>
-                    <span>LOGO</span>
-                    <span clicked={props.clickedToggle}> menu</span>
+                    <span><TiThMenu onClick={props.clickedToggle}/></span>
+                    <span className="navbar__menu" clicked={props.clickedToggle}> menu</span>
                 </div>
 
-                <nav className="DeskTopOnly">
+                <nav className="DesktopOnly">
                     <Navigations/>
                 </nav>
 

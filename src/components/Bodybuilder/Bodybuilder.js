@@ -1,7 +1,7 @@
 import React from "react";
 import "./Bodybuilder.scss";
 
-import {Home,Patners,Listpage,Courses, Showcase, Faq} from "../index";
+import {Home,Patners,Listpage,Courses, Showcase, Faq, Banner} from "../index";
 
 export default function Bodybuilder(){
     return(
@@ -17,6 +17,8 @@ export default function Bodybuilder(){
             <Showcase />
 
             <Faq />
+
+            <Banner />
             
         </div>
     )

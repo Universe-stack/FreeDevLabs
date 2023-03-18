@@ -1,0 +1,69 @@
+.Banner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3751FF;
+    color: #FFFFFF;
+
+
+    .Banner__inner{
+        display: flex;
+        width: 65%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4%;
+
+        .Banner__inner_left{
+            h2{
+                font-size: 30px;
+                font-weight: 800;
+            }
+        }
+
+        .Banner__inner_right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            button{
+                width: 100%;
+                padding: 6%;
+                margin: 3%;
+                background-color: #FFFFFF;
+                color: 1E266D;
+                font-weight: 400;
+                font-size: 16px;
+                outline: none;
+                border: none;
+                text-align: center;
+                border-radius: 30px;
+                cursor: pointer;
+            }
+
+            small{
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+@media (min-width: 0px) {
+
+    .Banner{
+        .Banner__inner{
+            flex-direction: column;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .Banner{
+        .Banner__inner{
+            flex-direction: row;
+        }
+    }
+}

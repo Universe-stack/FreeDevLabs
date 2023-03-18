@@ -10,6 +10,8 @@
     height: 82px;
     color: #1E266D;
 
+    
+
     h3{
         padding: 0;
         margin: 0;
@@ -25,6 +27,10 @@
         justify-content: flex-start;
         align-items: center;
         flex-grow: 0.40;
+
+        .DesktopOnly{
+            display: block;
+        }
     }
 
     .navbar__right{
@@ -55,4 +61,42 @@
         }
     }
 }
+
+
+
+@media (min-width: 0px) { 
+    .navbar{
+        .navbar__left{
+            .DesktopOnly{
+                display: none;
+            }
+        }
+        .navbar__right{
+            display: flex;
+
+            .navbar__buttons button:nth-child(1){
+                display: none;
+            }
+        }
+}
+}
+
+@media (min-width: 768px) { 
+    .navbar{
+        .navbar__left{
+            .DesktopOnly{
+                display: block;
+            }
+        }
+
+        .navbar__right{
+            display: flex;
+
+            .navbar__buttons button:nth-child(1){
+                display: block;
+            }
+        }
+    }
+}
+
 

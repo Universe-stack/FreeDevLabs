@@ -147,3 +147,112 @@
         }
     }
 }
+
+@media (min-width: 0px) { 
+
+    .home{
+        width:100%;
+        height: 850px;
+
+        .home__inner{
+            width: 100%;
+            height: 100%;
+
+           
+
+            .home__inner_text{
+                height:50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 0;
+                padding: 10px;
+                
+                h1{
+                    font-size: 45px;
+                    font-weight: 900;
+                }
+            }
+        
+            .home__vectors{
+                height: 30%;
+                margin-top: 10px;
+                width: 55%;
+                margin-top: 0%;
+                top: 55%;
+                
+            }
+        }
+    }
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 511px) {
+    .home{
+        
+        .home__inner{
+           
+            .home__inner_text{
+                height:50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 0;
+                padding: 1px;
+
+                h1{
+                    font-size: 45px;
+                }
+            }
+        
+            .home__vectors{
+                height: 40%;
+                margin-top: 0;
+                width: 55%;
+                margin-top: -5%;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .home{
+        
+        .home__inner{
+           
+            .home__inner_text{
+                height:50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 0;
+                padding: 1px;
+
+                h1{
+                    font-size: 45px;
+                }
+            }
+        
+            .home__vectors{
+            display: flex;
+            flex-direction: column;
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            position: absolute;
+            width: 50%;
+            height: 55%;
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { }

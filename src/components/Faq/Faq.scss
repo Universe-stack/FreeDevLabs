@@ -1,39 +1,121 @@
 .Faq{
+    padding: 5% 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #1E266D;
+    
+    span{
+        width: 65%;
+        text-align: left;
+        position: relative;
+
+        h2{
+            z-index: 1;
+            font-size: 30px;
+        }
+
+        img{
+            position: absolute;
+            left: -4%;
+            top: 10%;
+            z-index: -1;
+        }   
+    }
 
     .Faq__inner{
-        padding: 3% 0;
+        padding: 3%;
         width: 70%;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 3%;
+        display: flex;
+
+        .Faq__inner_1{
+            padding: 5px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+        .Faq__inner_2{
+            padding: 5px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
 
         .Faq__div{
-            padding: 3%;
-            border: 1px solid #141414;
+            padding: 2%;
+            border: 1.2px solid rgb(204, 201, 201);
             border-radius: 8px;
+            width: 90%;
 
             span{
                 display: flex;
                 justify-content: space-between;
                 padding: 3%;
+                width: 95%;
 
                 h3{
                     margin: 0;
+                    font-size: 15px;
+                }
+                
+            }
+
+            p{
+                position: absolute;
+                padding: 0 10px;
+                margin: 0;
+                
+            }
+        }
+
+    }
+}
+
+
+.open{
+    display: block;
+    background: white;
+    padding: 30px 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close{
+    display: none;
+}
+
+
+
+@media (min-width: 0px) {
+    .Faq{
+        .Faq__inner{
+            flex-direction: column;
+            margin-top: 15px;
+            width: 80%;
+            .Faq__inner_1{
+                width: 100%;
+            }
+            .Faq__inner_2{
+                width: 100%;
+            }
+
+            .Faq__div{
+                
+                p{
+                    font-size: 14px;
+                    margin: 1rem 0;
                 }
             }
         }
     }
 }
 
-
-.Open{
-    display: block;
-}
-
-.Close{
-    display: none;
-}

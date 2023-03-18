@@ -2,68 +2,62 @@ import React from "react";
 import './Footer.scss';
 //import {images} from '../constants';
 
-export default function footer(props){
+export default function Footer(props){
     return(
         <div className="Footer">
+
             <div className="Footer__inner">
-                <div className="Footer__logo" style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}> <h2 style={{color:"white"}}>SoundLab</h2> 
-                <div className="Footer__sm">
-                        <span>Instagram</span>
-                        <span>Twitter</span>
-                        <span>Whatsapp</span>
-                </div>
-                </div>
-                <div className="Footer__links">
-                    <div>
+                <div className="Footer__inner_left">
+                    <span className="Logo">
+                        Logo
+                    </span>
+
+                    <span className="Menu">
+                        <p>Menu</p>
                         <ul>
-                            <li> <h3 style={{color:"gray", margin:0, padding:"10px 0"}}> Company</h3></li>
-                            <li><a href="/">About</a></li>
-                            <li><a href="/">Contact us</a></li>
-                            <li><a href="/">Plans and Pricing</a></li>
-                            <li><a href="/">What's new</a></li>
+                            <li>Services</li>
+                            <li>Works</li>
+                            <li>About</li>
+                            <li>Contact</li>
                         </ul>
+                    </span>
 
+                    <span className="Connect">
+                        <p>Connect</p>
                         <ul>
-                            <li> <h3 style={{color:"gray", margin:0, padding:"10px 0"}}> Content</h3></li>
-                            <li><a href="/">About</a></li>
-                            <li><a href="/">Contact us</a></li>
-                            <li><a href="/">Plans and Pricing</a></li>
-                            <li><a href="/">What's new</a></li>
+                            <li>LinkedIn</li>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
                         </ul>
-
-                        <ul>
-                            <li> <h3 style={{color:"gray", margin:0, padding:"10px 0"}}> Help</h3></li>
-                            <li><a href="/">About</a></li>
-                            <li><a href="/">Contact us</a></li>
-                            <li><a href="/">Plans and Pricing</a></li>
-                            <li><a href="/">What's new</a></li>
-                        </ul>
-
-                       
-                    </div>
-
-                    
-                     
+                    </span>
                 </div>
-                <div className="Footer__footer">
-                    <div >
-                    <ul>
-                        <li><a href="/">Legal</a></li>
-                        <li><a href="/">Privacy Center</a></li>
-                        <li><a href="/">Privacy Policy</a></li>
-                        <li><a href="/">Cookies</a></li>
-                        <li><a href="/">Ads</a></li>
-                    </ul>
-                    </div>
 
-                    <div style={{display: "flex", flexDirection:"column"}}>
-                        <p style={{color:"grey", fontSize:"12px", margin:"5px 0"}}>@Nigeria</p>
-                        <p style={{color:"grey", fontSize:"12px",  margin:"5px 0"}}>c  2022 SoundLab prod </p>
-                    </div>
+                <div className="Footer__inner_right">
+                    <p>Subcribe to our newsletter</p>
+                    <form>
+                        <input placeholder="Your email" />
+                        <button>Subcribe</button>
+                    </form>
+                 
                 </div>
             </div>
-            
-            
+
+            <div className="Footer__last_div">
+                <span>
+                    <small><strong>2020 Logo</strong>, All rights reserved</small>
+                </span>
+
+                <span>
+                    <ul>
+                        <li><small>Privacy policy</small></li>
+                        <li><small>Terms/conditions</small></li>
+                        <li><small>Code of conduct</small></li>
+                    </ul>
+                    
+                </span>
+            </div>
+
         </div>
     )
 };

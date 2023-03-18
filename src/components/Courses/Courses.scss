@@ -10,7 +10,7 @@
 
 .courses__inner{
     
-    width: 70%;
+    width: 65%;
     padding: 4%;
 
     span{
@@ -76,4 +76,23 @@
         
     }
 
+}
+
+@media (min-width: 0px) {
+
+    .courses{
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .courses__inner{
+
+    width: 95%;
+        .courses__inner_div{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 3%;
+            margin: 40px 10px;
+        }
+    }
 }
