@@ -15,7 +15,7 @@ const Showcase=(props)=>(
 
             <div className="Showcase__divs">
                 <div>
-                    <p>Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!</p>
+                    <p>"Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!"</p>
 
                     <span>
                         <img src={images.testimonial1} alt="" />
@@ -25,7 +25,7 @@ const Showcase=(props)=>(
                 </div>
 
                 <div>
-                    <p>Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!</p>
+                    <p>"Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!"</p>
 
                     <span>
                         <img src={images.testimonial3} alt="" />
@@ -35,7 +35,7 @@ const Showcase=(props)=>(
                 </div>
 
                 <div>
-                    <p>Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!</p>
+                    <p>"Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!"</p>
 
                     <span>
                         <img src={images.testimonial2} alt="" />

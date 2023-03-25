@@ -15,8 +15,8 @@ export default function Navbar(props){
         <div className="navbar">
             <div className="navbar__left">
                 <div>
-                    <span><TiThMenu onClick={props.clickedToggle}/></span>
-                    <span className="navbar__menu" clicked={props.clickedToggle}> menu</span>
+                    <span className="DesktopOnlyMenu"><TiThMenu onClick={props.clickedToggle}/></span>
+                    <span className="navbar__menu" clicked={props.clickedToggle}> <span className="DesktopOnlyLogo">Menu</span></span>
                 </div>
 
                 <nav className="DesktopOnly">

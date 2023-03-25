@@ -22,7 +22,6 @@
         display: flex;
         flex-direction: row;
         color: black;
-       
         gap: 6%;
         justify-content: flex-start;
         align-items: center;
@@ -31,6 +30,13 @@
         .DesktopOnly{
             display: block;
         }
+
+        .DesktopOnlyMenu > svg{
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        
     }
 
     .navbar__right{
@@ -39,7 +45,7 @@
         gap: 6%;
         flex-grow: 0.20;
         align-items: center;
-
+        font-family: Source Sans Pro,Arial,sans-serif;
 
         .navbar__buttons{
             display: flex;
@@ -70,6 +76,13 @@
             .DesktopOnly{
                 display: none;
             }
+
+            .DesktopOnlyLogo{
+                display: none;
+            }
+            .DesktopOnlyMenu{
+                display: block;
+            }
         }
         .navbar__right{
             display: flex;
@@ -86,6 +99,14 @@
         .navbar__left{
             .DesktopOnly{
                 display: block;
+            }
+
+            .DesktopOnlyLogo{
+                display: block;
+            }
+
+            .DesktopOnlyMenu{
+                display: none;
             }
         }
 

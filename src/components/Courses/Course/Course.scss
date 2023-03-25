@@ -1,0 +1,118 @@
+.Course{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #1E266D;
+    background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #F2F9FF 100%);;;
+    padding-bottom:5% ;
+
+    .ghost{
+        height: 200px;
+    }
+
+    .Course__banner{
+        width: 100%;
+        background: #3751FF;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        .Course__banner_inner{
+            top: 55%;
+            position: absolute;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 3%;
+           
+
+            .Course__banner_box{
+                width: 20%;
+                height: 9rem;
+                background-color: yellow;
+                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .Course__banner_desc{
+                padding: 10px;
+                padding-bottom: 0;
+                width: 100%;
+                align-self: center;
+                padding-top: 1rem;
+
+            }
+        }
+    }
+
+    .Course__inner{
+        margin-top: 5rem;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .Course__inner_YT{
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Course__inner_p{
+            width: 60%;
+            padding: 1%;
+            line-height: 1.6;
+            
+            h2{
+                text-align: center;
+            }
+            
+            ul{
+                margin: 0;
+                list-style: none;
+                padding: 0;
+            }
+        }
+
+        .Course__inner_niche{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            h2{
+                text-align: center;
+                margin: 0;
+            }
+
+            span{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 70%;
+                
+            }
+
+            .Course__inner_niche_item{
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 10px;
+                background: #3751FF;
+            }
+            
+        }
+    }
+}
+

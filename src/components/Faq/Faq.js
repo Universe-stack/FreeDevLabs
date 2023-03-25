@@ -59,7 +59,7 @@ const Faq=()=>{
                     <div className="Faq__div">
                             <span>
                                 <h3> Will I get lifetime Updates?</h3>
-                                <small small id ="second" onClick={()=>setPtoggle2(prev => prev = !prev)} >{ptoggle?<small>close</small>:<small>open</small>}</small>
+                                <small small id ="second" onClick={()=>setPtoggle2(prev => prev = !prev)} >{ptoggle2?<small>close</small>:<small>open</small>}</small>
                             </span>
                             <div className={attachedClasses2}>
                                 <p>Landify is a landing page UI kit for figma, it is not a avenur fni the ksn jejs</p>
@@ -81,7 +81,7 @@ const Faq=()=>{
                     <div className="Faq__div">
                         <span>
                             <h3> Will I get lifetime Updates?</h3>
-                            <small onClick={()=>setPtoggle3(prev => prev = !prev)}>{ptoggle?<small>close</small>:<small>open</small>}</small>
+                            <small onClick={()=>setPtoggle3(prev => prev = !prev)}>{ptoggle3?<small>close</small>:<small>open</small>}</small>
                         </span>
                         <div className={attachedClasses3}>
                             <p>Landify is a landing page UI kit for figma, it is not a avenur fni the ksn jejs</p>

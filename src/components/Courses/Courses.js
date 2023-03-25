@@ -40,7 +40,7 @@ const Courses=()=>{
                     </div>
                     
                     <div>
-                        <h3> Product Design </h3>
+                        <h3> Product Design</h3>
                         <p> We've designed and built ecommerce experiences that have driven sales.</p>
                         <button><strong>Get Started</strong></button>
                     </div>
