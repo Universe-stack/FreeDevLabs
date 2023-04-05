@@ -1,5 +1,6 @@
 import React from "react";
 import './Course.scss';
+import {NavLink} from 'react-router-dom';
 
 import { useSelector } from "react-redux";
 
@@ -8,15 +9,13 @@ import {YouTube}  from "../../index";
 
 
 
-
 const Course=()=>{
 
     const courses = useSelector((state)=>state.course)
     console.log(courses);
-
     const course = courses.course;
 
-    let param = "Data Analysis";
+    let param = "Web development";
     const courseFound = course.find((item)=> item.name === param);
     console.log(courseFound)
 
@@ -61,12 +60,24 @@ const Course=()=>{
                             <span>
                             {courseFound.type.map((item)=>{
                                 return (
-                                
-                                <div className="Course__inner_niche_item">
-                                    <h2>{item.name}</h2>
-                                    <small>{item.id}</small>
-                                </div>)
-                            })}
+                                    <div>
+                                        <NavLink to={`/courses/:${3}/${item.name}`}>
+                                            <div className="Course__inner_niche_item">
+                                            <img 
+                                                src={item.image}
+                                                width={250}
+                                                height={250}
+                                                className="product-image"
+                                                alt=""
+                                            />
+                                            <p className="course-name">{item.name}</p>
+                                            <p className="course-price">{item.id}</p>
+                                            </div>
+                                        </NavLink>
+                                    </div>  
+                                )
+                            })
+                            }
                             </span>
                         </div>
 

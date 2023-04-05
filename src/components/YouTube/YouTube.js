@@ -1,28 +1,36 @@
 import React from 'react';
-import YouTube from 'react-youtube';
+import "./YouTube.scss";
 
 
-export default class YoutubeVideo 
-extends React.Component {
-  render() {
+
+const Youtube=({h,w,title})=> {
+  
+  console.log(h,w)
     const opts = {
-      height: "390",
-      width: "640",
+      height:`${h}`,
+      width:`${w}`,
       playerVars: {
         autoplay: 1,
       },
     };
+
+    function onReady(event){
+        event.target.pauseVideo();
+    }
   
     return (
-      <div>
-        <h3>GeeksforGeeks - Youtube</h3>
-        <YouTube videoId="" 
-            opts={opts} onReady={this._onReady} />
+      <div className='video-container'>
+        <iframe
+        height={`${h}`}
+        width={`${w}`}
+        title='vid'
+  src="https://www.youtube.com/embed/msizPweg3kE"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope;"
+  allowfullscreen></iframe>
       </div>
     );
-  }
   
-  _onReady(event) {
-    event.target.pauseVideo();
-  }
 }
+
+export default Youtube;

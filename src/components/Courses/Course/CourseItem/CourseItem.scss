@@ -1,0 +1,127 @@
+.CourseItem{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #1E266D;
+    
+
+    li{
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    h2,h3{
+        text-align: left;
+    }
+
+
+    .CourseItem__inner{
+        width: 70%;
+        padding: 3%;
+        margin: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #1E266D;
+
+
+        .CourseItem__inner_YT{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: pink;
+            width: 100%;
+
+            .video-container {
+                position: relative;
+                width:100%;
+                padding-bottom: 56.25%;
+                height: 0;
+            }
+            
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .CourseItem__inner_p{
+            margin-top: 2%;
+            width: 100%;
+            text-align: left;
+
+            h2{
+                font-weight: 800;
+            }
+        }
+
+        .CourseItem__inner_accordion{
+            width: 100%;
+            padding: 50px;
+            cursor: pointer;
+
+            .accordion{
+                width: 95%;
+                border: none;
+
+
+                .accordion_item{
+                    margin: 1rem 0;
+                    
+                    .accordion_heading{
+                        background-color: #1E266D;
+                        height: 100%;
+                        padding: 2.5%;
+                        width: 100%;
+                        border-radius: 9px;
+
+                    }
+
+                    .accordion_button{
+                        color: #FFFFFF;
+                        font-weight: 800;
+
+                        .accordion_button_span{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            h3{
+                                margin: 1%;
+                            }
+                        }
+                    }
+
+                    .accordion_panel{
+                        padding: 0;
+                        padding: 0 20px;
+                        animation: fadein 0.40s ease-in;
+
+                        .accordion_ul{
+                            width: 100%;
+                            margin: 0;
+                            padding: 10px 0;
+
+                            .accordion_li{
+                                width: 100%;
+                                margin: 0.5rem 0;
+                                padding: 1rem 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+   
+}
