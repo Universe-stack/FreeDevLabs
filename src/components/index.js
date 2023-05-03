@@ -19,3 +19,4 @@ export {default as YouTube} from './YouTube/YouTube';
 export {default as Emoji} from '../components/UI/Emoji/Emoji';
 export {default as Communities} from '../components/communities/Communities';
 export {default as CourseItem} from './Courses/Course/CourseItem/CourseItem';
+export {default as Resources} from './Resources/Resources';

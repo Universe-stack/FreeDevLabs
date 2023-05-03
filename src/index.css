@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 body {
   margin: 0;
-  font-family: Source Sans Pro,Arial,sans-serif;
+  font-family: 'Poppins',Source Sans Pro,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'Poppins',source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

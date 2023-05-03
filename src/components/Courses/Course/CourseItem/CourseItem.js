@@ -1,6 +1,10 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import {YouTube}  from "../../../index";
 import {BsFillArrowDownSquareFill} from "react-icons/bs";
+import { useParams } from 'react-router';
+import { NavLink } from "react-router-dom";
+
+import { getCourseData } from '../../../services';
 
 import {
     Accordion,
@@ -16,6 +20,43 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 import './CourseItem.scss';
 
 const CourseItem = () => {
+    const [data,setData] =useState([])
+
+    const {id,courseId} = useParams();
+    console.log(id,courseId)
+
+    useEffect(()=> {
+        getCourseData()
+        .then((res)=>{
+          const ress=res.niches;
+          console.log(ress);
+          for(let i=0;i<ress.length;i++){
+            if(ress[i].slug===courseId){
+                console.log(ress[i])
+                setData(ress[i].skills)
+            }
+          }
+
+        })
+        .catch(e=>{
+          console.log("error",e)
+        })
+    },[]);
+
+    console.log(data)
+
+    const filta= data.filter((item)=>{
+        return item.slug === id;
+    })
+    console.log(filta)
+
+    let accordionData =filta.map((item)=>item.techs)
+    const [innerAccord]= accordionData;
+    
+    console.log(accordionData,"accordion data")
+    console.log(innerAccord,"inner accordion data")
+
+
   return (
     <div className='CourseItem'>
         <div className='CourseItem__inner'>
@@ -24,43 +65,33 @@ const CourseItem = () => {
             </div>
 
                 <span className="CourseItem__inner_p">
-                    <h2>TYPE WEB DEVELOPMENT</h2>
+                    <h2>{filta.map(item=>item.name)}</h2>
                                     <p> 
                                         Mae your brand stand out with pixel perfect design crafted to perfectiostand out with pixel perfect design crafted to perfection Mae your brand stand out with pixel perfect design crafted to per Mae your brand stand out with pixel perfect design crafted to perfection.
                                     </p>
                 </span>
 
                 <div className="CourseItem__inner_accordion">
-                            <Accordion allowZeroExpanded className='accordion'>
+                          {accordionData.length?innerAccord.map((item)=>{
+                            return(
+                                 <Accordion allowZeroExpanded className='accordion'>
                                 <AccordionItem className='accordion_item'>
                                     <AccordionItemHeading className='accordion_heading'>
                                         <AccordionItemButton className='accordion_button'>
-                                            <span className='accordion_button_span'><h3>HTML</h3>  <span className='course_icon'><BsFillArrowDownSquareFill /></span></span>
+                                            <span className='accordion_button_span'><h3>{item.name}</h3>  <span className='course_icon'><BsFillArrowDownSquareFill /></span></span>
                                         </AccordionItemButton>
                                     </AccordionItemHeading>
                                     <AccordionItemPanel className='accordion_panel'>
                                         <ul className='accordion_ul'>
-                                            <li className='accordion_li'> <span>Icon</span><span>Traversy media</span></li>
-                                            <li className='accordion_li'> <span>Icon</span><span>Traversy media</span></li>
-                                            <li className='accordion_li'> <span>Icon</span><span>Traversy media</span></li>
+                                            <li className='accordion_li'> <span>🎥</span><span><NavLink to={`${item.link}`}>{item.name}</NavLink></span></li>
+                                            <li className='accordion_li'> <span>🔖</span><span>Traversy media</span></li>
+                                            <li className='accordion_li'> <span>📚</span><span>Traversy media</span></li>
                                         </ul>
                                     </AccordionItemPanel>
                                 </AccordionItem>
-                                <AccordionItem className='accordion_item'>
-                                    <AccordionItemHeading className='accordion_heading'>
-                                        <AccordionItemButton className='accordion_button'>
-                                        <span className='accordion_button_span'><h3>CSS</h3>  <span className='course_icon'><BsFillArrowDownSquareFill /></span></span>
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
-                                    <AccordionItemPanel className='accordion_panel'>
-                                        <p className='accordion_panel_p'>
-                                            In ad velit in ex nostrud dolore cupidatat consectetur
-                                            ea in ut nostrud velit in irure cillum tempor laboris
-                                            sed adipisicing eu esse duis nulla non.
-                                        </p>
-                                    </AccordionItemPanel>
-                                </AccordionItem>
                             </Accordion>
+                            )
+                          }):null}
                 </div>
         </div>
 

@@ -1,6 +1,9 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './Course.scss';
 import {NavLink} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import { getCourseData } from "../../services";
+import CourseItem from "./CourseItem/CourseItem";
 
 import { useSelector } from "react-redux";
 
@@ -9,25 +12,54 @@ import {YouTube}  from "../../index";
 
 
 
+
+
 const Course=()=>{
+    const [data,setData] =useState([])
 
-    const courses = useSelector((state)=>state.course)
-    console.log(courses);
-    const course = courses.course;
+    const {id} = useParams();
+    console.log(id)
 
-    let param = "Web development";
-    const courseFound = course.find((item)=> item.name === param);
-    console.log(courseFound)
+    useEffect(()=> {
+        getCourseData()
+        .then((res)=>{
+          console.log(res)
+          setData(res.niches)
 
+        })
+        .catch(e=>{
+          console.log("error",e)
+        })
+    },[]);
+
+    console.log(data)
+
+    const filta= data.filter((item)=>{
+        return item.slug === id;
+    })
+
+    console.log(filta.skills)
+
+    const ID =filta.map(item=>item.id)
+    console.log(ID, "this is ID")
+
+    const isNiched =filta.map(item=>item.isNiched)
+    console.log(isNiched, "this is niched")
+
+    const isSkills =filta.map(item=>{ return item.skills})
+    console.log(isSkills, "this is skilled")
+
+    
+    
     return(
         <div className="Course">
-
+            
            <div>
                 <div className="ghost">
                 <div className="Course__banner">
                         {/*<img src={images.polo} alt ="" className="Course__banner_img"/>*/}
                         <div className="Course__banner_inner">
-                            <span className="Course__banner_box"><img src={images.testimonial1} alt="" /></span>
+                            <span className="Course__banner_box"><h1>🎨⚙️</h1></span>
                             <span className="Course__banner_desc"> Mae your brand stand out with pixel perfect design crafted to perfection, Mae your brand stand out with pixel perfect design crafted to perfection.</span>
                         </div>
                     </div>
@@ -39,7 +71,7 @@ const Course=()=>{
                         </div>
 
                         <span className="Course__inner_p">
-                            <h2>WEB DEVELOPMENT</h2>
+                            <h2>{filta.map(item=>item.name)}</h2>
                             <ul>
                                 <li> <p> 
                                         Mae your brand stand out with pixel perfect design crafted to perfection
@@ -53,29 +85,34 @@ const Course=()=>{
                             </ul>
                         </span>
 
-                        {courseFound.niches? 
+                        {isNiched? 
                         
                         <div className="Course__inner_niche">
 
                             <span>
-                            {courseFound.type.map((item)=>{
-                                return (
+                            {filta.map((item)=>{
+                                return item.skills.map((item)=>{return(
                                     <div>
-                                        <NavLink to={`/courses/:${3}/${item.name}`}>
-                                            <div className="Course__inner_niche_item">
-                                            <img 
-                                                src={item.image}
-                                                width={250}
-                                                height={250}
-                                                className="product-image"
-                                                alt=""
-                                            />
-                                            <p className="course-name">{item.name}</p>
-                                            <p className="course-price">{item.id}</p>
-                                            </div>
-                                        </NavLink>
-                                    </div>  
-                                )
+                                    <NavLink to={`/courses/${id}/${item.slug}`}>
+                                        <div className="Course__inner_niche_item">
+                                        <img 
+                                            src={""}
+                                            width={250}
+                                            height={250}
+                                            className="product-image"
+                                            alt=""
+                                        />
+                                        <p className="course-name">{item.name}</p>
+                                        
+                                        </div>
+                                    </NavLink>
+                                    
+                                    
+                                </div>
+
+                                
+                                )})
+                                
                             })
                             }
                             </span>

@@ -7,142 +7,224 @@
     background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #F2F9FF 100%);;;
     padding-bottom:5% ;
 
-    .ghost{
-        height: 200px;
-    }
+   
 
-    .Course__banner{
-        width: 100%;
-        background: #3751FF;
-        height: 120px;
-        display: flex;
-        justify-content: center;
-        position: relative;
-
-        .Course__banner_inner{
-            top: 55%;
-            position: absolute;
-            width: 70%;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 3%;
-           
-
-            .Course__banner_box{
-                width: 20%;
-                height: 9rem;
-                background-color: yellow;
-                display: block;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .Course__banner_desc{
-                padding: 10px;
-                padding-bottom: 0;
-                width: 100%;
-                align-self: center;
-                padding-top: 1rem;
-
-            }
-        }
-    }
-
-    .Course__inner{
-        margin-top: 5rem;
-        width: 100%;
-        justify-content: center;
+    div{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
 
-        .Course__inner_YT{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: pink;
-            width: 60%;
-
-            .video-container {
-                position: relative;
-                width:100%;
-                padding-bottom: 56.25%;
-                height: 0;
-            }
-            
-            .video-container iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        .Course__inner_p{
-            width: 60%;
-            padding: 1%;
-            line-height: 1.6;
-            
-            h2{
-                text-align: left;
-                font-weight: 800;
-            }
-            
-            ul{
-                margin: 0;
-                list-style: none;
-                padding: 0;
-            }
-        }
-
-        .Course__inner_niche{
+        .ghost{
+            height: 270px;
             width: 100%;
+    
+        }
+    
+        .Course__banner{
+            width: 100%;
+            background: #3751FF;
+            height: 130px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
-            
-            h2{
-                text-align: center;
-                margin: 0;
-            }
-
-            span{
+            position: relative;
+    
+            .Course__banner_inner{
+                top: 55%;
+                position: absolute;
+                width: 90%;
                 display: flex;
-                justify-content: space-evenly;
+                flex-direction: row;
+                justify-content: flex-start;
                 align-items: center;
-                width: 70%;
+                gap: 3%;
                 
-            }
-
-            .Course__inner_niche_item{
-                height: 17rem;
-                width: 13rem;
-                padding:  1rem 0.4rem;
-                cursor: pointer;
-                transform: scale(1, 1);
-                transition: transform 0.5s ease;
-                color: #324d67;
-                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-                margin-top: 20%;
-                img{
-                    border-radius: 10px;
-                    background-color: #ebebeb;
-                     transform: scale(1, 1);
-                     transition: transform 0.5s ease;
-                     width: 100%;
-                     object-fit: cover;
-                     height: 70%;
-                     
+               
+                h1{
+                    font-size:300%;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                }
+    
+                .Course__banner_box{
+                    width: 20%;
+                    height: 9rem;
+                    display: block;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #FFFFFF;
+                    border-radius: 14px;
+                    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);;
+                }
+    
+                .Course__banner_desc{
+                    padding: 10px;
+                    padding-bottom: 0;
+                    width: 100%;
+                    align-self: center;
+                    padding-top: 1rem;
+    
                 }
             }
-            
+        }
+    
+        .Course__inner{
+            margin-top: 5rem;
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .Course__inner_YT{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: pink;
+                width: 90%;
+    
+                .video-container {
+                    position: relative;
+                    width:100%;
+                    padding-bottom: 56.25%;
+                    height: 0;
+                }
+                
+                .video-container iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+            .Course__inner_p{
+                width: 90%;
+                padding: 1%;
+                line-height: 1.6;
+                
+                h2{
+                    text-align: left;
+                    font-weight: 800;
+                }
+                
+                ul{
+                    margin: 0;
+                    list-style: none;
+                    padding: 0;
+                }
+            }
+    
+            .Course__inner_niche{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                h2{
+                    text-align: center;
+                    margin: 0;
+                }
+    
+                span{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    width: 70%;
+
+                    .Hide{
+                        display: none;
+                    }
+                    
+                }
+    
+                .Course__inner_niche_item{
+                    height: 17rem;
+                    width: 13rem;
+                    padding:  1rem 0.4rem;
+                    cursor: pointer;
+                    transform: scale(1, 1);
+                    transition: transform 0.5s ease;
+                    color: #324d67;
+                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                    margin-top: 20%;
+                    img{
+                        border-radius: 10px;
+                        background-color: #ebebeb;
+                         transform: scale(1, 1);
+                         transition: transform 0.5s ease;
+                         width: 100%;
+                         object-fit: cover;
+                         height: 70%;
+                         
+                    }
+                }
+                
+            }
         }
     }
+}
+
+@media (min-width: 0px){
+    .Course{
+       div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        .Course__banner{
+            .Course__banner_inner{
+                top: 85%;
+
+                .Course__banner_desc{
+                    font-size: small;
+                }
+            }
+        }
+        .Course__inner{
+            width: 95%;
+            margin-top: 2rem;
+
+            
+            .Course__inner_niche{
+               
+                span{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+       }
+    }
+}
+
+@media (min-width: 511px){
+    .Course{
+        div{
+         .Course__banner{
+             .Course__banner_inner{
+                 top: 65%;
+             }
+         }
+         .Course__inner{
+             width: 75%;
+             margin-top: 1.5rem;
+
+             .Course__inner_niche{
+               
+                span{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 5%;
+                }
+            }
+         }
+        }
+     }
 }
 

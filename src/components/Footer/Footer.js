@@ -13,7 +13,7 @@ export default function Footer(props){
                     </span>
 
                     <span className="Menu">
-                        <p>Menu</p>
+                        <p>Menu 🏠</p>
                         <ul>
                             <li>Services</li>
                             <li>Works</li>
@@ -23,7 +23,7 @@ export default function Footer(props){
                     </span>
 
                     <span className="Connect">
-                        <p>Connect</p>
+                        <p>Connect🌐</p>
                         <ul>
                             <li>LinkedIn</li>
                             <li>Facebook</li>

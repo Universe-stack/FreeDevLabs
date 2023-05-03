@@ -10,7 +10,7 @@ const Home=()=>{
 
             <section className="home__inner">
                 <div className="home__inner_text">
-                    <span className="home__text"> <h1>Good design meets<br/> great user experience</h1></span>
+                    <span className="home__text"> <h1>Learning tech skills'<br/> never been cheaper</h1></span>
 
                     <small>For everyone, from beginner to experts</small>
 

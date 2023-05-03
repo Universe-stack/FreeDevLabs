@@ -26,6 +26,7 @@
         justify-content: center;
         align-items: center;
         color: #1E266D;
+        
 
 
         .CourseItem__inner_YT{
@@ -68,31 +69,35 @@
             cursor: pointer;
 
             .accordion{
-                width: 95%;
+                width: 100%;
                 border: none;
+                border: 1px solid #d1d7dc;
 
 
                 .accordion_item{
-                    margin: 1rem 0;
+                    margin-bottom: 0.4%;
+                    
                     
                     .accordion_heading{
-                        background-color: #1E266D;
                         height: 100%;
-                        padding: 2.5%;
+                        padding: 2.5% 0;
                         width: 100%;
-                        border-radius: 9px;
+                        background-color: #f7f9fa;
+                        font-size: 90%;
 
                     }
 
                     .accordion_button{
-                        color: #FFFFFF;
+                        color: black;
                         font-weight: 800;
 
                         .accordion_button_span{
-                            width: 100%;
+                            width: 90%;
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
+                            margin: 0 1%;
+                            
 
                             h3{
                                 margin: 1%;
@@ -114,6 +119,13 @@
                                 width: 100%;
                                 margin: 0.5rem 0;
                                 padding: 1rem 0;
+                                font-size: 90%;
+                                display: flex;
+                                justify-content:center;
+
+                                span{
+                                    width: 50%;
+                                }
                             }
                         }
                     }
