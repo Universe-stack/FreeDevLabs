@@ -25,8 +25,6 @@ export const getCourseData = async ()=>{
     }     
     `
     const res = await request(url,query);
-
     return res;
-    
 }
 

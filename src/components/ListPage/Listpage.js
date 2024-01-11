@@ -32,7 +32,7 @@ const Listpage=(props)=>(
                             <h3>Design and assets</h3>
 
                             <p>
-                                Mae your brand stand out with pixel perfect design crafted to perfection. 
+                                Make your brand stand out with pixel perfect design crafted to perfection. 
                             </p>
                         </div>
                    </div>

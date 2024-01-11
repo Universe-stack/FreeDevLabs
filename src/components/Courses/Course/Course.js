@@ -4,6 +4,7 @@ import {NavLink} from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { getCourseData } from "../../services";
 import CourseItem from "./CourseItem/CourseItem";
+import Skeleton from '@mui/material/Skeleton';
 
 import { useSelector } from "react-redux";
 
@@ -71,7 +72,7 @@ const Course=()=>{
                         </div>
 
                         <span className="Course__inner_p">
-                            <h2>{filta.map(item=>item.name)}</h2>
+                            <h2>{data.length? filta.map(item=>item.name): <Skeleton variant="text" width={210} height={118} />}</h2>
                             <ul>
                                 <li> <p> 
                                         Mae your brand stand out with pixel perfect design crafted to perfection
@@ -80,16 +81,18 @@ const Course=()=>{
                                         Mae your brand stand out with pixel perfect design crafted to perfection.
                                     </p>
                                 </li>
+                                
 
                                 
                             </ul>
                         </span>
 
-                        {isNiched? 
+                        {data.length? isNiched? 
                         
                         <div className="Course__inner_niche">
 
                             <span>
+                                
                             {filta.map((item)=>{
                                 return item.skills.map((item)=>{return(
                                     <div>
@@ -116,10 +119,9 @@ const Course=()=>{
                             })
                             }
                             </span>
-                        </div>
+                        </div>:null:<Skeleton variant="rounded" animation={"wave"} width={`${"80%"}`} height={400} />
+                        
 
-                        :
-                        null
                         }
                 </div>
            </div>

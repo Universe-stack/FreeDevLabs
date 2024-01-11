@@ -3,6 +3,7 @@ import {YouTube}  from "../../../index";
 import {BsFillArrowDownSquareFill} from "react-icons/bs";
 import { useParams } from 'react-router';
 import { NavLink } from "react-router-dom";
+import Skeleton from '@mui/material/Skeleton';
 
 import { getCourseData } from '../../../services';
 
@@ -72,7 +73,7 @@ const CourseItem = () => {
                 </span>
 
                 <div className="CourseItem__inner_accordion">
-                          {accordionData.length?innerAccord.map((item)=>{
+                          {data.length?accordionData.length?innerAccord.map((item)=>{
                             return(
                                  <Accordion allowZeroExpanded className='accordion'>
                                 <AccordionItem className='accordion_item'>
@@ -91,7 +92,7 @@ const CourseItem = () => {
                                 </AccordionItem>
                             </Accordion>
                             )
-                          }):null}
+                          }):null:<Skeleton variant="rounded" animation={"wave"} width={`${"100%"}`} height={400} />}
                 </div>
         </div>
 
